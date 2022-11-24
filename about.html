@@ -44,9 +44,596 @@
       crossorigin="anonymous"
     ></script>
     <!-- JQuery -->
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+    <!-- Swiper -->
     <script src="index.js" type="text/javascript" defer></script>
   </head>
   <body>
-    
+    <div class="page">
+      <nav
+        class="navbar navbar-expand-sm navbar-light fixed-top"
+        style="border-bottom: 1px solid #47902236 !important"
+      >
+        <div class="container">
+          <a class="navbar-brand" href="#"
+            ><img
+              src="https://tfsd.co.za/wp-content/uploads/2020/11/tfsd_logo.png"
+              class="logo"
+            />
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarScroll"
+            aria-controls="navbarScroll"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div
+            class="collapse navbar-collapse"
+            id="navbarScroll"
+            style="justify-content: flex-end"
+          >
+            <ul
+              class="navbar-nav my-2 my-lg-0 navbar-nav-scroll d-flex"
+              style="--bs-scroll-height: 200px"
+            >
+              <li class="nav-item">
+                <a
+                  class="nav-link active"
+                  aria-current="page"
+                  href="/index.html"
+                  >Home</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">About</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Products
+                </a>
+                <ul class="dropdown-menu">
+                  <li>
+                    <a class="dropdown-item" href="#"
+                      >Stair Systems
+                      <i class="arr-icon fa-solid fa-angle-right"></i>
+                    </a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#"
+                      >Precast Structural Beams
+                      <i class="arr-icon fa-solid fa-angle-right"></i
+                    ></a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#"
+                      >Suspended Concrete Floor Systems
+                      <i class="arr-icon fa-solid fa-angle-right"></i
+                    ></a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#"
+                      >Pavers & Cobblers
+                      <i class="arr-icon fa-solid fa-angle-right"></i
+                    ></a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#"
+                      >Tiles <i class="arr-icon fa-solid fa-angle-right"></i
+                    ></a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#"
+                      >Building Products
+                      <i class="arr-icon fa-solid fa-angle-right"></i
+                    ></a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#"
+                      >Terraforce Retaining Blocks
+                      <i class="arr-icon fa-solid fa-angle-right"></i
+                    ></a>
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/projects.html">Projects</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/blog.html">Blog</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/contact.html">Contact Us</a>
+              </li>
+              <ul
+                class="dropdown-menu"
+                aria-labelledby="navbarDropdownMenuLink"
+              >
+                <li>
+                  <a class="dropdown-item" href="/projects.html">Projects</a>
+                </li>
+                <li><a class="dropdown-item" href="/blog.html">Blog</a></li>
+                <li>
+                  <a class="dropdown-item" href="/contact.html">Contact us</a>
+                </li>
+              </ul>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <section
+        class="bg-img"
+        style="
+          background-image: url('/images/stairs-bg-img.jpg');
+          background-size: cover;
+        "
+      >
+        <div class="container pt-5">
+          <div class="about-text-block">
+            <h1>About Our Company</h1>
+          </div>
+        </div>
+      </section>
+      <section style="font-family: Arial, Helvetica, sans-serif">
+        <div class="container about-container text-center">
+          <div class="row">
+            <div class="col">
+              <div class="text">
+                <h2>
+                  <span
+                    style="
+                      color: #479022;
+                      font-weight: 700;
+                      font-size: 42px;
+                      line-height: 1.2em;
+                      font-family: Arial, Helvetica, sans-serif;
+                    "
+                    >TFSD&nbsp;</span
+                  >
+                </h2>
+              </div>
+              <div class="divider">
+                <i
+                  class="fa-solid fa-minus"
+                  style="transform: scale(5); color: #74d642"
+                ></i>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col mt-5" style="color: rgb(105, 105, 105)">
+              <p>
+                TFSD Concrete Products (Pty) Ltd. has been established as a
+                special purpose sales and marketing division of Terraforce&nbsp;
+                Eastern Cape.
+              </p>
+              <p>
+                We supply innovative concrete products that provide for cost
+                effective, everlasting, fast track construction systems, by and
+                for the Eastern Cape built environment.
+              </p>
+              <p>
+                We commit to always being on time which is backed up by our
+                on-site technical service and years of practical experience.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section>
+        <div class="container about-container">
+          <div class="row text-center">
+            <div class="col">
+              <div class="text">
+                <h2>
+                  <span
+                    style="
+                      color: #479022;
+                      font-weight: 700;
+                      font-size: 42px;
+                      line-height: 1.2em;
+                      font-family: Arial, Helvetica, sans-serif;
+                    "
+                    >Leadership&nbsp;</span
+                  >
+                </h2>
+              </div>
+              <div class="divider">
+                <i
+                  class="fa-solid fa-minus"
+                  style="transform: scale(5); color: #74d642"
+                ></i>
+              </div>
+            </div>
+          </div>
+          <div class="row mt-5 text-center" style="padding: 27px">
+            <div
+              class="col-lg-4 col-md-6 col-s-12 mb-3 d-flex align-items-stretch"
+            >
+              <div class="card">
+                <img
+                  src="/images/Rich.jpg"
+                  class="card-img-top-about match-height"
+                />
+                <div class="card-body d-flex flex-column">
+                  <h5 class="card-title">Richard Ford</h5>
+                  <p class="card-text">Director</p>
+                  <a
+                    href="https://currentprofile.co.za/tfsd/richard-ford/"
+                    class="btn btn-success mt-auto align-self-center"
+                    >Contact Richard</a
+                  >
+                </div>
+              </div>
+            </div>
+            <div
+              class="col-lg-4 col-md-6 col-s-12 mb-3 d-flex align-items-stretch"
+            >
+              <div class="card">
+                <img
+                  src="/images/Gareth2.jpg"
+                  class="card-img-top-about match-height"
+                />
+                <div class="card-body d-flex flex-column">
+                  <h5 class="card-title">Gareth Krull</h5>
+                  <p class="card-text mb-4">Director</p>
+                  <a
+                    href="https://currentprofile.co.za/tfsd/gareth-krull/"
+                    class="btn btn-success mt-auto align-self-center"
+                    >Contact Gareth</a
+                  >
+                </div>
+              </div>
+            </div>
+            <div
+              class="col-lg-4 col-md-6 col-s-12 mb-3 d-flex align-items-stretch"
+            >
+              <div class="card">
+                <img
+                  src="/images/Mandla-2.jpg"
+                  class="card-img-top-about match-height"
+                />
+                <div class="card-body d-flex flex-column">
+                  <h5 class="card-title">Mandla Makaleni</h5>
+                  <p class="card-text mb-4">Director</p>
+                  <a href="#" class="btn btn-success mt-auto align-self-center"
+                    >Contact Mandla</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section>
+        <div class="container about-container">
+          <div class="row text-center">
+            <div class="col">
+              <div class="text">
+                <h2>
+                  <span
+                    style="
+                      color: #479022;
+                      font-weight: 700;
+                      font-size: 42px;
+                      line-height: 1.2em;
+                      font-family: Arial, Helvetica, sans-serif;
+                    "
+                    >Team&nbsp;</span
+                  >
+                </h2>
+              </div>
+              <div class="divider">
+                <i
+                  class="fa-solid fa-minus"
+                  style="transform: scale(5); color: #74d642"
+                ></i>
+              </div>
+            </div>
+          </div>
+          <div class="row mt-5 text-center" style="padding: 27px">
+            <div
+              class="col-lg-4 col-md-6 col-sm-12 mb-3 d-flex align-items-stretch"
+            >
+              <div class="card">
+                <img
+                  src="/images/Sim-Tola.jpg"
+                  class="card-img-top-about match-height"
+                />
+                <div class="card-body d-flex flex-column">
+                  <h5 class="card-title">Sim Tola</h5>
+                  <p class="card-text">Internal Sales</p>
+                </div>
+              </div>
+            </div>
+            <div
+              class="col-lg-4 col-md-6 col-sm-12 mb-3 d-flex align-items-stretch"
+            >
+              <div class="card">
+                <img
+                  src="/images/Nick.jpg"
+                  class="card-img-top-about match-height"
+                />
+                <div class="card-body d-flex flex-column">
+                  <h5 class="card-title">Nick Schenk</h5>
+                  <p class="card-text mb-4">Technical Sales</p>
+                </div>
+              </div>
+            </div>
+            <div
+              class="col-lg-4 col-md-6 col-sm-12 mb-3 d-flex align-items-stretch"
+            >
+              <div class="card">
+                <img
+                  src="/images/Picture14.jpg"
+                  class="card-img-top-about match-height"
+                />
+                <div class="card-body d-flex flex-column">
+                  <h5 class="card-title">Werner van Staden</h5>
+                  <p class="card-text mb-4">Factory Superintendent</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section>
+        <div class="container">
+          <div class="row text-center">
+            <div class="col">
+              <div class="text">
+                <h2>
+                  <span
+                    style="
+                      color: #479022;
+                      font-weight: 700;
+                      font-size: 42px;
+                      line-height: 1.2em;
+                      font-family: Arial, Helvetica, sans-serif;
+                    "
+                    >Our Community&nbsp;</span
+                  >
+                </h2>
+              </div>
+              <div class="divider">
+                <i
+                  class="fa-solid fa-minus"
+                  style="transform: scale(5); color: #74d642"
+                ></i>
+              </div>
+            </div>
+          </div>
+          <div class="swiper mySwiper my-5">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div
+                  class="community-slider"
+                  style="background-image: url(/images/Picture5-scaled.jpeg)"
+                ></div>
+              </div>
+              <div class="swiper-slide">
+                <div
+                  class="community-slider"
+                  style="background-image: url(/images/Picture4-scaled.jpeg)"
+                ></div>
+              </div>
+              <div class="swiper-slide">
+                <div
+                  class="community-slider"
+                  style="
+                    background-image: url(/images/306333525_477824397690823_3920823941962994436_n.jpeg);
+                  "
+                ></div>
+              </div>
+              <div class="swiper-slide">
+                <div
+                  class="community-slider"
+                  style="background-image: url(/images/Run_for_hope.jpg)"
+                ></div>
+              </div>
+              <div class="swiper-slide">
+                <div
+                  class="community-slider"
+                  style="background-image: url(/images/TerraForce-Gazebo.jpeg)"
+                ></div>
+              </div>
+              <div class="swiper-slide">
+                <div
+                  class="community-slider"
+                  style="background-image: url(/images/RFH.jpg)"
+                ></div>
+              </div>
+            </div>
+            <div class="swiper-button-next" style="color: #ffffff"></div>
+            <div class="swiper-button-prev" style="color: #ffffff"></div>
+            <div class="swiper-pagination" style="color: #ffffff"></div>
+          </div>
+        </div>
+      </section>
+      <section>
+        <div class="row my-5" style="padding: 70px">
+          <div class="col text-center">
+            <div
+              style="
+                color: #479022;
+                font-family: Arial, Helvetica, sans-serif;
+                font-size: 70px;
+              "
+            >
+              <h3>
+                “Building is about getting around the obstacles that are
+                presented to you.”
+              </h3>
+            </div>
+            <div
+              style="
+                padding: 40px;
+                font-family: Arial, Helvetica, sans-serif;
+                color: #868686;
+                text-transform: uppercase;
+                font-size: large;
+              "
+            >
+              <p>Jeremy Renner</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section>
+        <div class="row">
+          <div
+            class="col1 col-12 col-md-6"
+            style="height: 500px; border-top: 2px solid #479022 !important"
+          >
+            <div class="contact">
+              <h2 class="contact-title">Contact Us</h2>
+              <form class="row g-3">
+                <div class="name col-auto mb-3 d-flex flex-row">
+                  <label for="inputname" class="visually-hidden">Name</label>
+                  <input
+                    type="name"
+                    class="form-control"
+                    id="exampleFormControlInput1"
+                    placeholder="Name"
+                  />
+                </div>
+                <div class="email col-auto mb-3">
+                  <label for="inputemail" class="visually-hidden">Email</label>
+                  <input
+                    type="email"
+                    class="form-control"
+                    id="exampleFormControlInput1"
+                    placeholder="Email Address"
+                  />
+                </div>
+                <div class="mb-3">
+                  <label for="textmessage" class="visually-hidden"
+                    >Message</label
+                  >
+                  <textarea
+                    class="form-control"
+                    id="exampleFormControlTextarea1"
+                    rows="5"
+                    placeholder="Message"
+                  ></textarea>
+                </div>
+                <div class="btn1">
+                  <a href="#" class="btn mt-auto btn-outline-light btn-form"
+                    >Send Message</a
+                  >
+                </div>
+              </form>
+            </div>
+          </div>
+          <div
+            class="col-info col-12 col-md-6"
+            style="height: 500px; border-top: 2px solid #479022 !important"
+          >
+            <div class="details">
+              <div class="location pb-3">
+                <h5 style="color: #212529; font-weight: 400">
+                  <i class="icon fa-solid fa-location-dot"></i>
+                  103 Western Avenue, East London
+                </h5>
+              </div>
+              <div class="phone pb-3">
+                <h5 style="color: #212529; font-weight: 400">
+                  <i class="icon fa-solid fa-phone"></i>
+                  043 745 5000
+                </h5>
+              </div>
+              <div class="email pb-5">
+                <h5 style="color: #212529; font-weight: 400">
+                  <i class="icon fa-solid fa-envelope"></i>
+                  info@tfsd.co.za
+                </h5>
+              </div>
+              <div class="social-media">
+                <a
+                  href="https://www.facebook.com/TFSD.Concrete"
+                  title="Follow on Facebook"
+                  target="_blank"
+                  ><i class="fb-icon fa-brands fa-square-facebook"></i
+                ></a>
+                <a
+                  href="https://www.instagram.com/tfsdconcrete/"
+                  title="Follow on Instagram"
+                  target="_blank"
+                  ><i class="in-icon fa-brands fa-square-instagram"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section>
+        <footer>
+          <div class="row">
+            <div
+              class="footer text et_pb_text_inner"
+              data-et-multi-view-load-tablet-hidden="true"
+              data-et-multi-view-load-phone-hidden="true"
+            >
+              <p>
+                © 2022 TFSD |
+                <a
+                  href="C:\Users\james\OneDrive\Desktop\Website\TFSD\Privacy-Policy_TFSD.txt"
+                  target="_blank"
+                  rel="noopener"
+                  >Privacy Policy</a
+                >
+                | Designed by James Ford
+              </p>
+            </div>
+          </div>
+        </footer>
+      </section>
+    </div>
+
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        slidesPerView: 1,
+        spaceBetween: 10,
+        slidesPerGroup: 1,
+        breakpoints: {
+          768: {
+            slidesPerView: 2,
+            spaceBetween: 20,
+            slidesPerGroup: 2,
+          },
+          992: {
+            slidesPerView: 3,
+            spaceBetween: 30,
+            slidesPerGroup: 3,
+          }
+          ,
+        },
+        loop: true,
+        loopFillGroupWithBlank: true,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+      });
+    </script>
   </body>
 </html>

@@ -1,0 +1,813 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
+      integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz"
+      crossorigin="anonymous"
+    ></script>
+    <!-- Bootstrap CDN -->
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+      integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- Font Awesome CDN -->
+
+    <link rel="stylesheet" href="styles.css" />
+    <!-- Custom Stylesheet -->
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery.matchHeight/0.7.2/jquery.matchHeight-min.js"
+      integrity="sha512-/bOVV1DV1AQXcypckRwsR9ThoCj7FqTV2/0Bm79bL3YSyLkVideFLE3MIZkq1u5t28ke1c0n31WYCOrO01dsUg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <!-- Match Height -->
+
+    <script
+      src="https://code.jquery.com/jquery-3.6.1.min.js"
+      integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ="
+      crossorigin="anonymous"
+    ></script>
+    <!-- JQuery -->
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+    <!-- Swiper -->
+    <script src="index.js" type="text/javascript" defer></script>
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <script
+      type="text/javascript"
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"
+    ></script>
+  </head>
+  <body>
+    <div class="page">
+      <nav
+        class="navbar navbar-expand-sm navbar-light fixed-top"
+        style="border-bottom: 1px solid #47902236 !important"
+      >
+        <div class="container">
+          <a class="navbar-brand" href="#"
+            ><img
+              src="https://tfsd.co.za/wp-content/uploads/2020/11/tfsd_logo.png"
+              class="logo"
+            />
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarScroll"
+            aria-controls="navbarScroll"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div
+            class="collapse navbar-collapse"
+            id="navbarScroll"
+            style="justify-content: flex-end"
+          >
+            <ul
+              class="navbar-nav my-2 my-lg-0 navbar-nav-scroll d-flex"
+              style="--bs-scroll-height: 200px"
+            >
+              <li class="nav-item">
+                <a
+                  class="nav-link active"
+                  aria-current="page"
+                  href="/index.html"
+                  >Home</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/about.html">About</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Products
+                </a>
+                <ul class="dropdown-menu">
+                  <li>
+                    <a class="dropdown-item" href="#"
+                      >Stair Systems
+                      <i class="arr-icon fa-solid fa-angle-right"></i>
+                    </a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#"
+                      >Precast Structural Beams
+                      <i class="arr-icon fa-solid fa-angle-right"></i
+                    ></a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#"
+                      >Suspended Concrete Floor Systems
+                      <i class="arr-icon fa-solid fa-angle-right"></i
+                    ></a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#"
+                      >Pavers & Cobblers
+                      <i class="arr-icon fa-solid fa-angle-right"></i
+                    ></a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#"
+                      >Tiles <i class="arr-icon fa-solid fa-angle-right"></i
+                    ></a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#"
+                      >Building Products
+                      <i class="arr-icon fa-solid fa-angle-right"></i
+                    ></a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#"
+                      >Terraforce Retaining Blocks
+                      <i class="arr-icon fa-solid fa-angle-right"></i
+                    ></a>
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Projects</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/blog.html">Blog</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/contact.html">Contact Us</a>
+              </li>
+              <ul
+                class="dropdown-menu"
+                aria-labelledby="navbarDropdownMenuLink"
+              >
+                <li>
+                  <a class="dropdown-item" href="/projects.html">Projects</a>
+                </li>
+                <li><a class="dropdown-item" href="/blog.html">Blog</a></li>
+                <li>
+                  <a class="dropdown-item" href="/contact.html">Contact us</a>
+                </li>
+              </ul>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <section
+        class="bg-img"
+        style="
+          background-image: url('/images/tfsd-construction1.jpg');
+          background-size: cover;
+        "
+      >
+        <div class="container py-4">
+          <div class="projects-text-block">
+            <div class="row">
+              <h1
+                style="
+                  color: rgb(8, 8, 8);
+                  font-weight: 700;
+                  transform: scale(1.4);
+                  padding-bottom: 20px;
+                "
+              >
+                Projects
+              </h1>
+            </div>
+            <h4>Construction projects utilising TFSD Concrete Products</h4>
+          </div>
+        </div>
+      </section>
+      <section style="font-family: Arial, Helvetica, sans-serif">
+        <div class="container about-container text-left">
+          <div class="row">
+            <div class="col">
+              <div class="text">
+                <h2>
+                  <span
+                    style="
+                      color: #479022;
+                      font-weight: 700;
+                      font-size: 42px;
+                      line-height: 1.2em;
+                      font-family: Arial, Helvetica, sans-serif;
+                    "
+                    >Residential Projects&nbsp;</span
+                  >
+                </h2>
+              </div>
+              <div class="divider">
+                <i
+                  class="fa-solid fa-minus px-4"
+                  style="transform: scale(5); color: #74d642"
+                ></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="pt-5 pb-5">
+        <div class="container">
+          <div class="row">
+            <div class="col-12">
+              <div
+                id="carousel"
+                class="carousel slide carousel-fade"
+                data-ride="carousel"
+                data-interval="2500"
+              >
+                <div class="carousel-indicators">
+                  <button
+                    type="button"
+                    data-bs-target="#carouselIndicators"
+                    data-bs-slide-to="0"
+                    class="active"
+                    aria-current="true"
+                    aria-label="Slide 1"
+                  ></button>
+                  <button
+                    type="button"
+                    data-bs-target="#carouselIndicators"
+                    data-bs-slide-to="1"
+                    aria-label="Slide 2"
+                  ></button>
+                </div>
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <div class="row">
+                      <div class="col-md-4 mb-3">
+                        <div class="card">
+                          <img
+                            class="img-fluid"
+                            alt="100%x280"
+                            src="/images/Residential-Winstep-Open-Tread-Morgan-Bay-side-view.jpeg"
+                          />
+                        </div>
+                      </div>
+                      <div class="col-md-4 mb-3">
+                        <div class="card">
+                          <img
+                            class="img-fluid"
+                            alt="100%x280"
+                            src="/images/Pillaster-Block-Selborne.jpg"
+                          />
+                        </div>
+                      </div>
+                      <div class="col-md-4 mb-3">
+                        <div class="card">
+                          <img
+                            class="img-fluid"
+                            alt="100%x280"
+                            src="/images/Suspended-Concrete-Floor-Systems-Kei-Mouth.jpg"
+                          />
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <div class="row">
+                      <div class="col-md-4 mb-3">
+                        <div class="card">
+                          <img
+                            class="img-fluid"
+                            alt="100%x280"
+                            src="/images/Terraforce-Retaining-Blocks-Beacon-Bay.jpg"
+                          />
+                        </div>
+                      </div>
+                      <div class="col-md-4 mb-3">
+                        <div class="card">
+                          <img
+                            class="img-fluid"
+                            alt="100%x280"
+                            src="/images/Walkway-System-and-Retaining-Blocks-Winterstrand.jpg"
+                          />
+                        </div>
+                      </div>
+                      <div class="col-md-4 mb-3">
+                        <div class="card">
+                          <img
+                            class="img-fluid"
+                            alt="100%x280"
+                            src="/images/Winstep-and-Terraforce-Retaining-Blocks-Haga.jpg"
+                          />
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section style="font-family: Arial, Helvetica, sans-serif">
+        <div class="container about-container text-left">
+          <div class="row">
+            <div class="col">
+              <div class="text">
+                <h2>
+                  <span
+                    style="
+                      color: #479022;
+                      font-weight: 700;
+                      font-size: 42px;
+                      line-height: 1.2em;
+                      font-family: Arial, Helvetica, sans-serif;
+                    "
+                    >Commercial Projects&nbsp;</span
+                  >
+                </h2>
+              </div>
+              <div class="divider">
+                <i
+                  class="fa-solid fa-minus px-4"
+                  style="transform: scale(5); color: #74d642"
+                ></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="pt-5 pb-5">
+        <div class="container">
+          <div class="row">
+            <div class="col-12">
+              <div
+                id="carousel"
+                class="carousel slide carousel-fade"
+                data-ride="carousel"
+                data-interval="2500"
+              >
+                <div class="carousel-indicators">
+                  <button
+                    type="button"
+                    data-bs-target="#carouselIndicators"
+                    data-bs-slide-to="0"
+                    class="active"
+                    aria-current="true"
+                    aria-label="Slide 1"
+                  ></button>
+                  <button
+                    type="button"
+                    data-bs-target="#carouselIndicators"
+                    data-bs-slide-to="1"
+                    aria-label="Slide 2"
+                  ></button>
+                </div>
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <div class="row">
+                      <div class="col-md-4 mb-3">
+                        <div class="card">
+                          <img
+                            class="img-fluid"
+                            alt="100%x280"
+                            src="/images/Commercial-M10-Retaining-Block-Sasol-Mthatha-completed.jpeg"
+                          />
+                        </div>
+                      </div>
+                      <div class="col-md-4 mb-3">
+                        <div class="card">
+                          <img
+                            class="img-fluid"
+                            alt="100%x280"
+                            src="/images/Commercial-One-Republic-Olivewood-North-East-Site-View-Kwiklin.jpeg"
+                          />
+                        </div>
+                      </div>
+                      <div class="col-md-4 mb-3">
+                        <div class="card">
+                          <img
+                            class="img-fluid"
+                            alt="100%x280"
+                            src="/images/Commercial-Winstep-Open-Tread-Morgan-Bay-Hotel.jpeg"
+                          />
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <div class="row">
+                      <div class="col-md-4 mb-3">
+                        <div class="card">
+                          <img
+                            class="img-fluid"
+                            alt="100%x280"
+                            src="/images/Winstep-Closed-Treads-RBMG-Hospital-EL.jpg"
+                          />
+                        </div>
+                      </div>
+                      <div class="col-md-4 mb-3">
+                        <div class="card">
+                          <img
+                            class="img-fluid"
+                            alt="100%x280"
+                            src="/images/Terraforce-Retaining-Blocks-Cannon-Rocks-Pump-Station.jpg"
+                          />
+                        </div>
+                      </div>
+                      <!-- If an image is being a bad boy -->
+                      <div class="col-md-4 mb-3">
+                        <div
+                          class="card h-100 project-img"
+                          style="
+                            background-image: url(/images/Commercial-Complex-Retaining-wall.jpg);
+                          "
+                        ></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section style="font-family: Arial, Helvetica, sans-serif">
+        <div class="container about-container text-left">
+          <div class="row">
+            <div class="col">
+              <div class="text">
+                <h2>
+                  <span
+                    style="
+                      color: #479022;
+                      font-weight: 700;
+                      font-size: 42px;
+                      line-height: 1.2em;
+                      font-family: Arial, Helvetica, sans-serif;
+                    "
+                    >Government Projects&nbsp;</span
+                  >
+                </h2>
+              </div>
+              <div class="divider">
+                <i
+                  class="fa-solid fa-minus px-4"
+                  style="transform: scale(5); color: #74d642"
+                ></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="pt-5 pb-5">
+        <div class="container">
+          <div class="row">
+            <div class="col-12">
+              <div
+                id="carousel"
+                class="carousel slide carousel-fade"
+                data-ride="carousel"
+                data-interval="2500"
+              >
+                <div class="carousel-indicators">
+                  <button
+                    type="button"
+                    data-bs-target="#carouselIndicators"
+                    data-bs-slide-to="0"
+                    class="active"
+                    aria-current="true"
+                    aria-label="Slide 1"
+                  ></button>
+                  <button
+                    type="button"
+                    data-bs-target="#carouselIndicators"
+                    data-bs-slide-to="1"
+                    aria-label="Slide 2"
+                  ></button>
+                  <button
+                    type="button"
+                    data-bs-target="#carouselIndicators"
+                    data-bs-slide-to="2"
+                    aria-label="Slide 3"
+                  ></button>
+                </div>
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <div class="row">
+                      <div class="col-md-4 mb-3">
+                        <div class="card">
+                          <img
+                            class="img-fluid"
+                            alt="100%x280"
+                            src="/images/Government-M10-on-East-London-Beachfront.jpeg"
+                          />
+                        </div>
+                      </div>
+                      <div class="col-md-4 mb-3">
+                        <div class="card">
+                          <img
+                            class="img-fluid"
+                            alt="100%x280"
+                            src="/images/Retaining-Wall-N2.jpg"
+                          />
+                        </div>
+                      </div>
+                      <div class="col-md-4 mb-3">
+                        <div class="card">
+                          <img
+                            class="img-fluid"
+                            alt="100%x280"
+                            src="/images/Retaining-Wall-ELDZ.jpg"
+                          />
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <div class="row">
+                      <div class="col-md-4 mb-3">
+                        <div class="card">
+                          <img
+                            class="img-fluid"
+                            alt="100%x280"
+                            src="/images/Terraforce-Retaining-Blocks-Mhala-School-Idutywa.jpg"
+                          />
+                        </div>
+                      </div>
+                      <div class="col-md-4 mb-3">
+                        <div class="card">
+                          <img
+                            class="img-fluid"
+                            alt="100%x280"
+                            src="/images/M10-Terraforce-Retaining-Blocks-Mdantsane-RDP-Housing.jpg"
+                          />
+                        </div>
+                      </div>
+                      <div class="col-md-4 mb-3">
+                        <div class="card">
+                          <img
+                            class="img-fluid"
+                            alt="100%x280"
+                            src="/images/Interlocking-Pavers-Morgan-Bay.jpg"
+                          />
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <div class="row">
+                      <div class="col-md-4 mb-3">
+                        <div class="card">
+                          <img
+                            class="img-fluid"
+                            alt="100%x280"
+                            src="/images/Interlocking-Pavers.jpg"
+                          />
+                        </div>
+                      </div>
+                      <div class="col-md-4 mb-3">
+                        <div
+                          class="card h-100 project-img"
+                          style="
+                            background-image: url(/images/Government-Terracrete-Bridge.jpg);
+                          "
+                        ></div>
+                      </div>
+                      <div class="col-md-4 mb-3">
+                        <div
+                          class="card h-100 project-img"
+                          style="
+                            background-image: url(/images/Government-Terracrete-Riverbed.jpg);
+                          "
+                        ></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section style="font-family: Arial, Helvetica, sans-serif">
+        <div class="container about-container text-left">
+          <div class="row">
+            <div class="col">
+              <div class="text">
+                <h2>
+                  <span
+                    style="
+                      color: #479022;
+                      font-weight: 700;
+                      font-size: 42px;
+                      line-height: 1.2em;
+                      font-family: Arial, Helvetica, sans-serif;
+                    "
+                    >Construction Partners&nbsp;</span
+                  >
+                </h2>
+              </div>
+              <div class="divider">
+                <i
+                  class="fa-solid fa-minus px-4"
+                  style="transform: scale(5); color: #74d642"
+                ></i>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="container pt-5 pb-5 mb-5">
+          <div class="row">
+            <div class="col-lg-3 col-md-6">
+              <a href="https://www.brewcon.co.za/">
+                <div>
+                  <img
+                    class="w-100"
+                    src="/images/Brewcon-1.jpg"
+                    alt="Brewcon-1"
+                  /></div
+              ></a>
+            </div>
+            <div class="col-lg-3 col-md-6">
+              <a href="https://slcontractors.co.za/">
+                <div>
+                  <img
+                    class="w-100"
+                    src="/images/SL_Contractors.jpg"
+                    alt="SL_Contractors"
+                  /></div
+              ></a>
+            </div>
+            <div class="col-lg-3 col-md-6">
+              <a href="https://www.mpuma.co.za/">
+                <div>
+                  <img
+                    class="w-100"
+                    src="/images/Paving-Services.jpg"
+                    alt="Paving-Services"
+                  /></div
+              ></a>
+            </div>
+            <div class="col-lg-3 col-md-6">
+              <a href="https://www.mpuma.co.za/">
+                <div>
+                  <img
+                    class="w-100"
+                    src="/images/Mpumalanga_Constrution.jpg"
+                    alt="Mpumalanga_Constrution"
+                  /></div
+              ></a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section>
+        <div class="row">
+          <div
+            class="col1 col-12 col-md-6"
+            style="height: 500px; border-top: 2px solid #479022 !important"
+          >
+            <div class="contact">
+              <h2 class="contact-title">Contact Us</h2>
+              <form class="row g-3">
+                <div class="name col-auto mb-3 d-flex flex-row">
+                  <label for="inputname" class="visually-hidden">Name</label>
+                  <input
+                    type="name"
+                    class="form-control"
+                    id="exampleFormControlInput1"
+                    placeholder="Name"
+                  />
+                </div>
+                <div class="email col-auto mb-3">
+                  <label for="inputemail" class="visually-hidden">Email</label>
+                  <input
+                    type="email"
+                    class="form-control"
+                    id="exampleFormControlInput1"
+                    placeholder="Email Address"
+                  />
+                </div>
+                <div class="mb-3">
+                  <label for="textmessage" class="visually-hidden"
+                    >Message</label
+                  >
+                  <textarea
+                    class="form-control"
+                    id="exampleFormControlTextarea1"
+                    rows="5"
+                    placeholder="Message"
+                  ></textarea>
+                </div>
+                <div class="btn1">
+                  <a href="#" class="btn mt-auto btn-outline-light btn-form"
+                    >Send Message</a
+                  >
+                </div>
+              </form>
+            </div>
+          </div>
+          <div
+            class="col-info col-12 col-md-6"
+            style="height: 500px; border-top: 2px solid #479022 !important"
+          >
+            <div class="details">
+              <div class="location pb-3">
+                <h5 style="color: #212529; font-weight: 400">
+                  <i class="icon fa-solid fa-location-dot"></i>
+                  103 Western Avenue, East London
+                </h5>
+              </div>
+              <div class="phone pb-3">
+                <h5 style="color: #212529; font-weight: 400">
+                  <i class="icon fa-solid fa-phone"></i>
+                  043 745 5000
+                </h5>
+              </div>
+              <div class="email pb-5">
+                <h5 style="color: #212529; font-weight: 400">
+                  <i class="icon fa-solid fa-envelope"></i>
+                  info@tfsd.co.za
+                </h5>
+              </div>
+              <div class="social-media">
+                <a
+                  href="https://www.facebook.com/TFSD.Concrete"
+                  title="Follow on Facebook"
+                  target="_blank"
+                  ><i class="fb-icon fa-brands fa-square-facebook"></i
+                ></a>
+                <a
+                  href="https://www.instagram.com/tfsdconcrete/"
+                  title="Follow on Instagram"
+                  target="_blank"
+                  ><i class="in-icon fa-brands fa-square-instagram"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section>
+        <footer>
+          <div class="row">
+            <div
+              class="footer text et_pb_text_inner"
+              data-et-multi-view-load-tablet-hidden="true"
+              data-et-multi-view-load-phone-hidden="true"
+            >
+              <p>
+                © 2022 TFSD |
+                <a
+                  href="C:\Users\james\OneDrive\Desktop\Website\TFSD\Privacy-Policy_TFSD.txt"
+                  target="_blank"
+                  rel="noopener"
+                  >Privacy Policy</a
+                >
+                | Designed by James Ford
+              </p>
+            </div>
+          </div>
+        </footer>
+      </section>
+    </div>
+  </body>
+</html>

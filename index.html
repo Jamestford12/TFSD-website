@@ -6,6 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>TFSD</title>
 
+    <script
+      src="https://code.jquery.com/jquery-3.6.1.min.js"
+      integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ="
+      crossorigin="anonymous"
+    ></script>
+    <!-- JQuery -->
+
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -15,11 +22,6 @@
     <script
       src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
       integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.min.js"
-      integrity="sha384-IDwe1+LCz02ROU9k972gdyvl+AESN10+x7tBKgc9I5HFtuNz0wWnPclzo6p9vxnk"
       crossorigin="anonymous"
     ></script>
     <script
@@ -48,17 +50,10 @@
       referrerpolicy="no-referrer"
     ></script>
     <!-- Match Height -->
-
-    <script
-      src="https://code.jquery.com/jquery-3.6.1.min.js"
-      integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ="
-      crossorigin="anonymous"
-    ></script>
-    <!-- JQuery -->
     <script src="index.js" type="text/javascript" defer></script>
   </head>
   <body>
-    <header>
+    <div class="page">
       <nav
         class="navbar navbar-expand-sm navbar-light fixed-top"
         style="border-bottom: 1px solid #47902236 !important"
@@ -74,32 +69,29 @@
             class="navbar-toggler"
             type="button"
             data-bs-toggle="collapse"
-            data-bs-target="#navbarNavDropdown"
-            aria-controls="navbarNavDropdown"
+            data-bs-target="#navbarScroll"
+            aria-controls="navbarScroll"
             aria-expanded="false"
             aria-label="Toggle navigation"
           >
             <span class="navbar-toggler-icon"></span>
           </button>
-
-          <div class="collapse navbar-collapse" id="navbarNavDropdown">
-            <ul class="navbar-nav ms-auto">
+          <div
+            class="collapse navbar-collapse"
+            id="navbarScroll"
+            style="justify-content: flex-end"
+          >
+            <ul
+              class="navbar-nav my-2 my-lg-0 navbar-nav-scroll d-flex"
+              style="--bs-scroll-height: 200px"
+            >
               <li class="nav-item">
                 <a class="nav-link active" aria-current="page" href="#">Home</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="/about.html">About</a>
               </li>
-              <!-- <a
-                class="nav-link dropdown-toggle"
-                href="#"
-                id="navbarDropdownMenuLink"
-                role="button"
-                data-bs-toggle="dropdown"
-                aria-expanded="false"
-              > -->
-              
-              <li class="nav-item dropdown mx-0 mx-md-2">
+              <li class="nav-item dropdown">
                 <a
                   class="nav-link dropdown-toggle"
                   href="#"
@@ -109,8 +101,6 @@
                 >
                   Products
                 </a>
-
-                <!-- </a> -->
                 <ul class="dropdown-menu">
                   <li>
                     <a class="dropdown-item" href="#"
@@ -121,43 +111,42 @@
                   <li>
                     <a class="dropdown-item" href="#"
                       >Precast Structural Beams
-                      <i class="arr-icon fa-solid fa-angle-right"></i>
-                    </a>
+                      <i class="arr-icon fa-solid fa-angle-right"></i
+                    ></a>
                   </li>
                   <li>
                     <a class="dropdown-item" href="#"
                       >Suspended Concrete Floor Systems
-                      <i class="arr-icon fa-solid fa-angle-right"></i>
-                    </a>
+                      <i class="arr-icon fa-solid fa-angle-right"></i
+                    ></a>
                   </li>
                   <li>
                     <a class="dropdown-item" href="#"
                       >Pavers & Cobblers
-                      <i class="arr-icon fa-solid fa-angle-right"></i>
-                    </a>
+                      <i class="arr-icon fa-solid fa-angle-right"></i
+                    ></a>
                   </li>
                   <li>
                     <a class="dropdown-item" href="#"
-                      >Tiles
-                      <i class="arr-icon fa-solid fa-angle-right"></i>
-                    </a>
+                      >Tiles <i class="arr-icon fa-solid fa-angle-right"></i
+                    ></a>
                   </li>
                   <li>
                     <a class="dropdown-item" href="#"
                       >Building Products
-                      <i class="arr-icon fa-solid fa-angle-right"></i>
-                    </a>
+                      <i class="arr-icon fa-solid fa-angle-right"></i
+                    ></a>
                   </li>
                   <li>
                     <a class="dropdown-item" href="#"
                       >Terraforce Retaining Blocks
-                      <i class="arr-icon fa-solid fa-angle-right"></i>
-                    </a>
+                      <i class="arr-icon fa-solid fa-angle-right"></i
+                    ></a>
                   </li>
                 </ul>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Projects</a>
+                <a class="nav-link" href="/projects.html">Projects</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="#">Blog</a>
@@ -165,212 +154,212 @@
               <li class="nav-item">
                 <a class="nav-link" href="#">Contact Us</a>
               </li>
-              <li class="nav-item dropdown">
-                <ul
-                  class="dropdown-menu"
-                  aria-labelledby="navbarDropdownMenuLink"
-                >
-                  <li>
-                    <a class="dropdown-item" href="/projects.html">Projects</a>
-                  </li>
-                  <li><a class="dropdown-item" href="/blog.html">Blog</a></li>
-                  <li>
-                    <a class="dropdown-item" href="/contact.html">Contact us</a>
-                  </li>
-                </ul>
-              </li>
+              <ul
+                class="dropdown-menu"
+                aria-labelledby="navbarDropdownMenuLink"
+              >
+                <li>
+                  <a class="dropdown-item" href="/projects.html">Projects</a>
+                </li>
+                <li><a class="dropdown-item" href="/blog.html">Blog</a></li>
+                <li>
+                  <a class="dropdown-item" href="/contact.html">Contact us</a>
+                </li>
+              </ul>
             </ul>
           </div>
         </div>
       </nav>
-    </header>
-    <!-- </template> -->
-    <section
-      class="bg-img"
-      style="
-        background-image: url('/images/retainer-block-bg-img.jpg');
-        background-size: cover;
-      "
-    >
-      <div class="container pt-5">
-        <div class="text-block">
-          <h1>
-            Eastern Cape suppliers of top quality precast concrete products
-          </h1>
-          <h4>
-            Our concrete systems are designed to save you time and money,
-            providing an attractive built environment.
-          </h4>
-        </div>
-      </div>
-    </section>
-    <section class="mt-5 info-section">
-      <div class="container">
-        <div class="row px-4">
-          <div
-            class="col-lg-4 col-md-6 col-s-12 mb-3 d-flex align-items-stretch"
-          >
-            <div class="card">
-              <img
-                src="https://tfsd.co.za/wp-content/uploads/2022/09/Stairs.jpg"
-                class="card-img-top match-height"
-              />
-              <div class="card-body d-flex flex-column">
-                <h5 class="card-title">Stair Systems</h5>
-                <p class="card-text mb-4">
-                  Concrete stair elements are precast and pre-stressed systems
-                  fast track construction of stairs, ramps and walkways.
-                </p>
-                <a href="#" class="btn btn-success mt-auto align-self-start"
-                  >View Product</a
-                >
-              </div>
-            </div>
-          </div>
-          <div
-            class="col-lg-4 col-md-6 col-s-12 mb-3 d-flex align-items-stretch"
-          >
-            <div class="card">
-              <img
-                src="https://img.archiexpo.com/images_ae/photo-g/105233-4389085.jpg"
-                class="card-img-top match-height"
-              />
-              <div class="card-body d-flex flex-column">
-                <h5 class="card-title">Prestressed Structural Beams</h5>
-                <p class="card-text mb-4">
-                  Fast – Track beam systems to span wide apertures for both
-                  medium or heavy loadings.
-                </p>
-                <a href="#" class="btn btn-success mt-auto align-self-start"
-                  >View Product</a
-                >
-              </div>
-            </div>
-          </div>
-          <div
-            class="col-lg-4 col-md-6 col-s-12 mb-3 d-flex align-items-stretch"
-          >
-            <div class="card">
-              <img
-                src="https://tfsd.co.za/wp-content/uploads/2021/01/Retaining-M15-01.png"
-                class="card-img-top match-height"
-              />
-              <div class="card-body d-flex flex-column">
-                <h5 class="card-title">Terraforce Retaining Blocks</h5>
-                <p class="card-text mb-4">
-                  Plantable earth retaining wall systems for vertical to
-                  30-degree angle applications including stairways and planter
-                  boxes.
-                </p>
-                <a href="#" class="btn btn-success mt-auto align-self-start"
-                  >View Product</a
-                >
-              </div>
-            </div>
-          </div>
-          <div
-            class="col-lg-4 col-md-6 col-s-12 mb-3 d-flex align-items-stretch"
-          >
-            <div class="card">
-              <img
-                src="https://tfsd.co.za/wp-content/uploads/2020/11/product-04_PAVERS.png"
-                class="card-img-top match-height"
-              />
-              <div class="card-body d-flex flex-column">
-                <h5 class="card-title">Paving</h5>
-                <p class="card-text mb-4">
-                  Attractive concrete paving and cobble options available for
-                  upmarket driveways and walkways. Eco-Pavers also provide
-                  versatile hard lawn eco-friendly option.
-                </p>
-                <a href="#" class="btn btn-success mt-auto align-self-start"
-                  >View Product</a
-                >
-              </div>
-            </div>
-          </div>
-          <div
-            class="col-lg-4 col-md-6 col-s-12 mb-3 d-flex align-items-stretch"
-          >
-            <div class="card">
-              <img
-                src="https://tfsd.co.za/wp-content/uploads/2020/11/product-05_SUSPENDEDCON.png"
-                class="card-img-top match-height"
-              />
-              <div class="card-body d-flex flex-column">
-                <h5 class="card-title">Suspended Concrete Floor Systems</h5>
-                <p class="card-text mb-4">
-                  Prestressed concrete manually assembled flooring systems for
-                  residential and commercial application.
-                </p>
-                <a href="#" class="btn btn-success mt-auto align-self-start"
-                  >View Product</a
-                >
-              </div>
-            </div>
-          </div>
-          <div
-            class="col-lg-4 col-md-6 col-s-12 mb-3 d-flex align-items-stretch"
-          >
-            <div class="card">
-              <img
-                src="https://dreamcivil.com/wp-content/uploads/2021/12/image-of-cinder-block-on-masonry-job-site-min.jpg"
-                class="card-img-top match-height"
-              />
-              <div class="card-body d-flex flex-column">
-                <h5 class="card-title">Building Products</h5>
-                <p class="card-text mb-4">
-                  We supply specialised building products ranging in size,
-                  colour and texture to suit your requirements.
-                </p>
-                <a href="#" class="btn btn-success mt-auto align-self-start"
-                  >View Product</a
-                >
-              </div>
-            </div>
+
+      <!-- </template> -->
+      <section
+        class="bg-img"
+        style="
+          background-image: url('/images/retainer-block-bg-img.jpg');
+          background-size: cover;
+        "
+      >
+        <div class="container pt-5">
+          <div class="text-block">
+            <h1>
+              Eastern Cape suppliers of top quality precast concrete products
+            </h1>
+            <h4>
+              Our concrete systems are designed to save you time and money,
+              providing an attractive built environment.
+            </h4>
           </div>
         </div>
-      </div>
-    </section>
-    <section>
-      <div class="container mb-5">
-        <div class="row">
-          <div
-            class="col-6"
-            style="height: 100px; display: flex; align-items: center"
-          >
+      </section>
+      <section class="mt-5 mb-5 info-section">
+        <div class="container">
+          <div class="row px-4">
             <div
-              href="https://tfsd.co.za/wp-content/uploads/2022/08/Suburban-House-Brochure.pdf"
-              class="p-relative"
-              style="overflow: hidden; background-color: #479022"
+              class="col-lg-4 col-md-6 col-s-12 mb-3 d-flex align-items-stretch"
             >
-              <div class="card-body h-100">
-                <h4>Suburban House Brochure</h4>
+              <div class="card">
+                <img
+                  src="https://tfsd.co.za/wp-content/uploads/2022/09/Stairs.jpg"
+                  class="card-img-top"
+                />
+                <div class="card-body d-flex flex-column">
+                  <h5 class="card-title">Stair Systems</h5>
+                  <p class="card-text mb-4">
+                    Concrete stair elements are precast and pre-stressed systems
+                    fast track construction of stairs, ramps and walkways.
+                  </p>
+                  <a href="#" class="btn btn-success mt-auto align-self-start rounded-0"
+                    >View Product</a
+                  >
+                </div>
               </div>
-              <i
-                class="fas fa-paperclip p-absolute"
-                style="transform: scale(6)"
-              ></i>
+            </div>
+            <div
+              class="col-lg-4 col-md-6 col-s-12 mb-3 d-flex align-items-stretch"
+            >
+              <div class="card">
+                <img
+                  src="https://img.archiexpo.com/images_ae/photo-g/105233-4389085.jpg"
+                  class="card-img-top"
+                />
+                <div class="card-body d-flex flex-column">
+                  <h5 class="card-title">Prestressed Structural Beams</h5>
+                  <p class="card-text mb-4">
+                    Fast – Track beam systems to span wide apertures for both
+                    medium or heavy loadings.
+                  </p>
+                  <a href="#" class="btn btn-success mt-auto align-self-start rounded-0"
+                    >View Product</a
+                  >
+                </div>
+              </div>
+            </div>
+            <div
+              class="col-lg-4 col-md-6 col-s-12 mb-3 d-flex align-items-stretch"
+            >
+              <div class="card">
+                <img
+                  src="https://tfsd.co.za/wp-content/uploads/2021/01/Retaining-M15-01.png"
+                  class="card-img-top"
+                />
+                <div class="card-body d-flex flex-column">
+                  <h5 class="card-title">Terraforce Retaining Blocks</h5>
+                  <p class="card-text mb-4">
+                    Plantable earth retaining wall systems for vertical to
+                    30-degree angle applications including stairways and planter
+                    boxes.
+                  </p>
+                  <a href="#" class="btn btn-success mt-auto align-self-start rounded-0"
+                    >View Product</a
+                  >
+                </div>
+              </div>
+            </div>
+            <div
+              class="col-lg-4 col-md-6 col-s-12 mb-3 d-flex align-items-stretch"
+            >
+              <div class="card">
+                <img
+                  src="https://tfsd.co.za/wp-content/uploads/2020/11/product-04_PAVERS.png"
+                  class="card-img-top"
+                />
+                <div class="card-body d-flex flex-column">
+                  <h5 class="card-title">Paving</h5>
+                  <p class="card-text mb-4">
+                    Attractive concrete paving and cobble options available for
+                    upmarket driveways and walkways. Eco-Pavers also provide
+                    versatile hard lawn eco-friendly option.
+                  </p>
+                  <a href="#" class="btn btn-success mt-auto align-self-start rounded-0"
+                    >View Product</a
+                  >
+                </div>
+              </div>
+            </div>
+            <div
+              class="col-lg-4 col-md-6 col-s-12 mb-3 d-flex align-items-stretch"
+            >
+              <div class="card">
+                <img
+                  src="https://tfsd.co.za/wp-content/uploads/2020/11/product-05_SUSPENDEDCON.png"
+                  class="card-img-top"
+                />
+                <div class="card-body d-flex flex-column">
+                  <h5 class="card-title">Suspended Concrete Floor Systems</h5>
+                  <p class="card-text mb-4">
+                    Prestressed concrete manually assembled flooring systems for
+                    residential and commercial application.
+                  </p>
+                  <a href="#" class="btn btn-success mt-auto align-self-start rounded-0"
+                    >View Product</a
+                  >
+                </div>
+              </div>
+            </div>
+            <div
+              class="col-lg-4 col-md-6 col-s-12 mb-3 d-flex align-items-stretch"
+            >
+              <div class="card">
+                <img
+                  src="https://dreamcivil.com/wp-content/uploads/2021/12/image-of-cinder-block-on-masonry-job-site-min.jpg"
+                  class="card-img-top"
+                />
+                <div class="card-body d-flex flex-column">
+                  <h5 class="card-title">Building Products</h5>
+                  <p class="card-text mb-4">
+                    We supply specialised building products ranging in size,
+                    colour and texture to suit your requirements.
+                  </p>
+                  <a href="#" class="btn btn-success mt-auto align-self-start rounded-0"
+                    >View Product</a
+                  >
+                </div>
+              </div>
             </div>
           </div>
-          <div class="col-6">
-            <a
-              href="https://tfsd.co.za/wp-content/uploads/2022/08/Rural-Development-Brochure.pdf"
-              class="p-relative card card-border"
+        </div>
+      </section>
+      <section>
+        <div class="container mb-5">
+          <div class="row">
+            <div
+              class="col-6"
+              style="height: 100px; display: flex; align-items: center"
             >
-              <div class="card-body style=height:122px">
-                <h4>Rural Development Brochure</h4>
+              <div
+                href="https://tfsd.co.za/wp-content/uploads/2022/08/Suburban-House-Brochure.pdf"
+                class="p-relative"
+                style="overflow: hidden; background-color: #479022"
+              >
+                <div class="card-body h-100">
+                  <h4>Suburban House Brochure</h4>
+                </div>
+                <i
+                  class="fas fa-paperclip p-absolute"
+                  style="transform: scale(6)"
+                ></i>
               </div>
-              <i class="fas fa-paperclip p-absolute"></i>
-            </a>
+            </div>
+            <div class="col-6">
+              <a
+                href="https://tfsd.co.za/wp-content/uploads/2022/08/Rural-Development-Brochure.pdf"
+                class="p-relative card card-border"
+              >
+                <div class="card-body style=height:122px">
+                  <h4>Rural Development Brochure</h4>
+                </div>
+                <i class="fas fa-paperclip p-absolute"></i>
+              </a>
+            </div>
           </div>
         </div>
-      </div>
-    </section>
-    <section style="border-top: 2px solid #479022 !important">
-      <div class="">
+      </section>
+      <section>
         <div class="row">
-          <div class="col1 col-lg-6 col-s-12 col-md-6" style="height: 500px">
+          <div
+            class="col1 col-lg-6 col-s-12 col-md-6"
+            style="height: 500px; border-top: 2px solid #479022 !important"
+          >
             <div class="contact">
               <h2 class="contact-title">Contact Us</h2>
               <form class="row g-3">
@@ -411,7 +400,10 @@
               </form>
             </div>
           </div>
-          <div class="col-info col-6" style="height: 500px">
+          <div
+            class="col-info col-12 col-md-6 border-top: 2px solid #479022 !important;"
+            style="height: 500px"
+          >
             <div class="details">
               <div class="location pb-3">
                 <h5 style="color: #212529; font-weight: 400">
@@ -448,29 +440,45 @@
             </div>
           </div>
         </div>
-      </div>
-    </section>
-    <section>
-      <footer>
-        <div class="row">
-          <div
-            class="footer text et_pb_text_inner"
-            data-et-multi-view-load-tablet-hidden="true"
-            data-et-multi-view-load-phone-hidden="true"
-          >
-            <p>
-              © 2022 TFSD |
-              <a
-                href="C:\Users\james\OneDrive\Desktop\Website\TFSD\Privacy-Policy_TFSD.txt"
-                target="_blank"
-                rel="noopener"
-                >Privacy Policy</a
-              >
-              | Designed by James Ford
-            </p>
+      </section>
+      <section>
+        <footer>
+          <div class="row">
+            <div
+              class="footer text et_pb_text_inner"
+              data-et-multi-view-load-tablet-hidden="true"
+              data-et-multi-view-load-phone-hidden="true"
+            >
+              <p>
+                © 2022 TFSD |
+                <a
+                  href="C:\Users\james\OneDrive\Desktop\Website\TFSD\Privacy-Policy_TFSD.txt"
+                  target="_blank"
+                  rel="noopener"
+                  >Privacy Policy</a
+                >
+                | Designed by James Ford
+              </p>
+            </div>
           </div>
-        </div>
-      </footer>
-    </section>
+        </footer>
+      </section>
+    </div>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+      integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.min.js"
+      integrity="sha384-IDwe1+LCz02ROU9k972gdyvl+AESN10+x7tBKgc9I5HFtuNz0wWnPclzo6p9vxnk"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>
