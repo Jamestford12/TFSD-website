@@ -98,7 +98,13 @@ a.navbar-brand {
 .card-img-top {
   height: 290px;
 }
-.card {
+.home-card {
+  border: none !important;
+}
+.about-card {
+  border: none !important;
+}
+.projects-card {
   border: none !important;
 }
 .card-title {
@@ -221,11 +227,10 @@ a.navbar-brand {
   height: 170px !important;
   width: auto;
   padding: 20px;
- text-align: center;
- 
+  text-align: center;
 }
 
-.project-img{
+.project-img {
   background-position: center;
   background-size: cover;
 }
@@ -234,11 +239,23 @@ a.navbar-brand {
   height: 100px !important;
   width: auto;
   padding: 20px;
- font-family: Arial, Helvetica, sans-serif;
- display: flex;
- align-items: center;
- justify-content: center;
- font-size: x-large;
+  font-family: Arial, Helvetica, sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: x-large;
 }
-
-
+.title-tag {
+  color: #454545;
+}
+.contact-text-block {
+  background-color: rgba(204, 197, 178, 0.61);
+  height: 180px !important;
+  width: auto;
+  padding-left: 10px;
+  padding-right: 10px;
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: left;
+  font-size: x-large;
+  margin: 161px;
+}
